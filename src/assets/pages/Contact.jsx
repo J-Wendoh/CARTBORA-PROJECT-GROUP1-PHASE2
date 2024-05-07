@@ -3,7 +3,9 @@ import React from "react";
 const Contact = () => {
     return (
         <div className="contact-container">
-            <h2>Contact Us</h2>
+            <h2 id="slogan">Shop Smart, Shop Bora: Your Ultimate Cart Companion!</h2>
+            <h1>Contact Us</h1>
+
             <p>Welcome to CartBora! We are thrilled to connect with you. Our headquarters are nestled in the heart of bustling downtown, where innovation meets passion.</p>
             <p>If you have any inquiries, our dedicated customer care desk is readily available to assist you:</p>
             <ul>
