@@ -38,9 +38,9 @@ To access the app one needs to have a web browser , good internet connection tha
 ### Authors
 
 This project has been authored by three members who collaborated to collectively work on the project.
-        1.Joanne Wendoh.
-        2.Arnold Kisuri.
-        3.Alvin Obala
+1.Joanne Wendoh.
+2.Arnold Kisuri.
+3.Alvin Obala
 
 ### License
 
