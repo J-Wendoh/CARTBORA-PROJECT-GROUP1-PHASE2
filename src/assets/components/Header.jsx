@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -8,10 +9,12 @@ const Header = () => {
             </div>
             <div className="header-right">
                 <ul>
-                    <a href = ''><li>HOME</li></a>
+                    <Link to = '/'><li>HOME</li></Link>
                     <a href = ''><li>ABOUT</li></a>
                     <a href = ''><li>CONTACT</li></a>
+                    <Link to = '/cart'>
                     <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" /></li></a>
+                    </Link>
                 </ul>
             </div>
         </div>
