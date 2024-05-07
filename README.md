@@ -1,3 +1,4 @@
+<<<<<<<<<<HEAD
 # CART-BORA APP
 
 This is an app that allows the user to shop household items ,electronics ,food and clothing from the comfort of their home.
@@ -38,15 +39,11 @@ To access the app one needs to have a web browser , good internet connection tha
 ### Authors
 
 This project has been authored by three members who collaborated to collectively work on the project.
-<<<<<<< HEAD
-        1.Joanne Wendoh.
-        2.Arnold Kisuri.
-        3.Alvin Obala
 =======
 1.Joanne Wendoh.
 2.Arnold Kisuri.
 3.Alvin Obala
->>>>>>> 444d010093cc83b1dfc713b2d8671103cbac1b6c
+
 
 ### License
 
@@ -54,8 +51,8 @@ Copyright (c) 2024 Permission is hereby granted, free of charge, to any person o
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-<<<<<<< HEAD
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-=======
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
->>>>>>> 444d010093cc83b1dfc713b2d8671103cbac1b6c
+
