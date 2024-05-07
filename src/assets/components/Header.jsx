@@ -1,4 +1,5 @@
 import React from 'react';
+import Contact from "../pages/Contact"
 
 const Header = () => {
     return (
@@ -10,7 +11,7 @@ const Header = () => {
                 <ul>
                     <a href = ''><li>HOME</li></a>
                     <a href = ''><li>ABOUT</li></a>
-                    <a href = ''><li>CONTACT</li></a>
+                    <a href ='' ><li>CONTACT</li></a>
                     <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" /></li></a>
                 </ul>
             </div>
