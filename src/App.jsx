@@ -4,7 +4,8 @@ import './App.css'
 import Header from './assets/components/Header'
 import Cart from './assets/components/cart';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import Contact from './assets/pages/Contact';
+import About from "./assets/pages/About"
 
 function App() {
   const [items, setItems] = useState([])
@@ -33,6 +34,8 @@ function App() {
         <h1>CART-BORA APP</h1>
         <Header cartItems={cartItems} />
        <Routes>
+          <Route path="/contact" element={<Contact />} />    
+          <Route path="/about" element={<About />} />
           <Route path="/" element={<ProductCollection items={items} addToCart={addToCart} />} />
           <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
         </Routes>
