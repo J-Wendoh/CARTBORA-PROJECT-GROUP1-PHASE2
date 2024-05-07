@@ -2,25 +2,46 @@ import { useState, useEffect } from 'react'
 import ProductCollection from './assets/components/productCollection'
 import './App.css'
 import Header from './assets/components/Header'
+import Cart from './assets/components/cart';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   const [items, setItems] = useState([])
+  const [cartItems, setCartItems] = useState([]);
+
   useEffect(()=> {
     fetch('http://localhost:3000/catalogue')
     .then((r) => r.json())
     .then((data) => setItems(data))
   }, [])
 
+   // Function to add item to cart
+   const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+   }
+
+    // Function to remove item from cart
+  const removeFromCart = (item) => {
+    setCartItems(cartItems.filter((i) => i.id !== item.id));
+  }
+  
   return (
-    <>
+    
+     <Router>
       <div>
-      <h1>CART-BORA APP</h1>
-        <Header/>
-        <ProductCollection items={items}/>
+        <h1>CART-BORA APP</h1>
+        <Header cartItems={cartItems} />
+       <Routes>
+          <Route path="/" element={<ProductCollection items={items} addToCart={addToCart} />} />
+          <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
+        </Routes>
+       
       </div>
-    </>
+    </Router>
+    
   )
 }
+
 
 export default App

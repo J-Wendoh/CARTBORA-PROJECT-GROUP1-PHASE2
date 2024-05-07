@@ -1,6 +1,12 @@
 import React from 'react'
 
-const ProductCard = ({ item }) => {
+const ProductCard = ({ item, addToCart}) => {
+  const handleAddToCart = () => {
+    addToCart(item); 
+    alert("Added to Cart Succesfully")
+  };
+
+
   return (
     <div className="product">
       <div className="product-card">
@@ -12,7 +18,7 @@ const ProductCard = ({ item }) => {
           Price:<strong>Ksh {item.price}</strong>
         </p>
         <div className="product-button">
-          <button>Add to Cart</button>
+          <button onClick={handleAddToCart}>Add to Cart</button>
         </div>
       </div>
     </div>
