@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
-import ProductCollection from './ProductCollection'
+import ProductCollection from './assets/components/productCollection'
+import './App.css'
+import Header from './assets/components/Header'
+
 
 function App() {
   const [items, setItems] = useState([])
@@ -12,7 +15,8 @@ function App() {
   return (
     <>
       <div>
-        <h1>CART-Bora</h1>
+      <h1>CART-BORA APP</h1>
+        <Header/>
         <ProductCollection items={items}/>
       </div>
     </>
