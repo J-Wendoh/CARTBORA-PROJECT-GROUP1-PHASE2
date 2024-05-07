@@ -1,20 +1,19 @@
 import { useState, useEffect } from 'react'
-import '../App.css'
-import productCollection from './components/productCollection'
+import ProductCollection from './ProductCollection'
 
 function App() {
   const [items, setItems] = useState([])
   useEffect(()=> {
     fetch('http://localhost:3000/catalogue')
     .then((r) => r.json())
-    .then((items) => setItems(items))
+    .then((data) => setItems(data))
   }, [])
 
   return (
     <>
       <div>
         <h1>CART-Bora</h1>
-        <productCollection items={items}/>
+        <ProductCollection items={items}/>
       </div>
     </>
   )

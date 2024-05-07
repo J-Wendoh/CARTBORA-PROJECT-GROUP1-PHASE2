@@ -3,7 +3,7 @@
       {
         "productId": 1,
         "productName": "Stainless Steel Mixing Bowls",
-        "price": 19.99,
+        "price": 1000,
         "productPicture": "https://images-cdn.ubuy.com.sa/633bb121fad72d53692b60d2-set-mangkuk-pencampur-baja-tahan-karat.jpg",
         "description": "Set of durable stainless steel mixing bowls for all your kitchen needs.",
         "category": "kitchen",
@@ -12,7 +12,7 @@
       {
         "productId": 2,
         "productName": "Cotton T-Shirt",
-        "price": 14.99,
+        "price": 500,
         "productPicture": "https://www.budget-t.com/base/large/3900_2.jpg",
         "description": "Comfortable and versatile cotton t-shirt available in various colors.",
         "category": "clothing",
@@ -21,7 +21,7 @@
       {
         "productId": 3,
         "productName": "Organic Pasta",
-        "price": 3.99,
+        "price": 300,
         "productPicture": "https://www.pasta-garofalo.com/au/wp-content/uploads/sites/9/2019/09/casarecce-organic-bio-pasta-garofalo-585x500.jpg",
         "description": "Made with organic ingredients, this pasta is a healthy and delicious meal option.",
         "category": "food",
@@ -30,7 +30,7 @@
       {
         "productId": 4,
         "productName": "Wireless Earphones",
-        "price": 49.99,
+        "price": 4900,
         "productPicture": "https://www.sony.com/image/e3beeee2eeeb7580a61adcab32538851?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9",
         "description": "Compact and convenient wireless earphones for enjoying music and calls on the go.",
         "category": "electronics",
@@ -39,7 +39,7 @@
       {
         "productId": 5,
         "productName": "Stainless Steel Knife Set",
-        "price": 29.99,
+        "price": 2900,
         "productPicture": "https://kenglautensils.co.ke/wp-content/uploads/2021/03/IMG-20210315-WA0000.jpg",
         "description": "Sharp and durable stainless steel knife set for precise cutting in the kitchen.",
         "category": "kitchen",
@@ -48,7 +48,7 @@
       {
         "productId": 6,
         "productName": "Jeans",
-        "price": 34.99,
+        "price": 2200,
         "productPicture": "https://lsco.scene7.com/is/image/lsco/A46900002-dynamic1-pdp?fmt=webp&qlt=70&resMode=bisharp&fit=crop,1&op_usm=0.6,0.6,8&wid=660&hei=660",
         "description": "Classic and stylish jeans available in various sizes and washes.",
         "category": "clothing",
@@ -57,7 +57,7 @@
       {
         "productId": 7,
         "productName": "Coffee Beans",
-        "price": 9.99,
+        "price": 900,
         "productPicture": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/220px-Roasted_coffee_beans.jpg",
         "description": "Freshly roasted coffee beans for a delicious and invigorating brew.",
         "category": "food",
@@ -66,7 +66,7 @@
       {
         "productId": 8,
         "productName": "Smart Speaker",
-        "price": 99.99,
+        "price": 10000,
         "productPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9frjpZRdNw0iuSGKoPvC4_wHvSTmQ3gJsHaMK5bumCA&s",
         "description": "Voice-activated smart speaker for playing music, controlling smart home devices, and more.",
         "category": "electronics",
@@ -75,7 +75,7 @@
       {
         "productId": 9,
         "productName": "Cast Iron Skillet",
-        "price": 24.99,
+        "price": 2499,
         "productPicture": "https://m.media-amazon.com/images/I/81ZbyjXVvzL.jpg",
         "description": "Versatile and durable cast iron skillet for a variety of cooking tasks.",
         "category": "kitchen",
@@ -84,7 +84,7 @@
       {
         "productId": 10,
         "productName": "Sweatshirt",
-        "price": 29.99,
+        "price": 3000,
         "productPicture": "https://www.buytshirtsonline.co.uk/images/gildan-heavy-blend-adult-crew-neck-sweatshirt-p657-320175_medium.jpg",
         "description": "Warm and comfortable sweatshirt perfect for cooler weather.",
         "category": "clothing",
@@ -93,7 +93,7 @@
       {
         "productId": 11,
         "productName": "Olive Oil",
-        "price": 7.99,
+        "price": 900,
         "productPicture": "https://i5.walmartimages.com/seo/Great-Value-Organic-Extra-Virgin-Olive-Oil-51-fl-oz_082ffffd-d485-4261-865f-8da3e6677f0e.846f7674f455f3d595afb9e5f619ebfd.jpeg",
         "description": "Extra virgin olive oil for cooking, dipping, and dressing.",
         "category": "food",

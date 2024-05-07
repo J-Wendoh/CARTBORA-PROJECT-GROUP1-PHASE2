@@ -1,16 +1,17 @@
 import React from 'react'
-import productCard from './productCard'
+import ProductCard from './ProductCard'
 
-const productCollection = ({items}) => {
+const ProductCollection = ({items}) => {
   return (
     <div className='product-collection'>
         {items.map((item) => (
-            <productCard
+            <ProductCard
             key={item.id}
+            item={item}
                 />
         ) )}
     </div>
   )
 }
 
-export default productCollection
+export default ProductCollection
