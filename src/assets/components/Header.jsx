@@ -1,5 +1,7 @@
 import React from 'react';
+import Contact from "../pages/Contact"
 import { Link } from 'react-router-dom';
+
 
 const Header = () => {
     return (
@@ -11,6 +13,7 @@ const Header = () => {
                 <ul>
                     <Link to = '/'><li>HOME</li></Link>
                     <a href = ''><li>ABOUT</li></a>
+                    <a href ='' ><li>CONTACT</li></a>
                     <a href = ''><li>CONTACT</li></a>
                     <Link to = '/cart'>
                     <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" /></li></a>
