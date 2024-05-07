@@ -11,7 +11,7 @@ const Header = () => {
                     <a href = ''><li>HOME</li></a>
                     <a href = ''><li>ABOUT</li></a>
                     <a href = ''><li>CONTACT</li></a>
-                    <li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" /></li>
+                    <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" /></li></a>
                 </ul>
             </div>
         </div>
