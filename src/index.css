@@ -71,3 +71,31 @@
   .product-button button:active{
     transform: translateY(2px);
   }
+
+  .filter-buttons {
+    /* Style the container for the buttons (optional) */
+    display: flex; /* Arrange buttons horizontally */
+    justify-content: space-around; /* Distribute buttons evenly */
+    margin-bottom: 15px; /* Add some bottom margin */
+  }
+  
+  .filter-buttons button {
+    /* Style all buttons */
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 5px; 
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #eee; 
+  }
+  
+  .filter-buttons button.active {
+    background-color: #ddd;
+    border-color: #ccc; 
+  }
+  
