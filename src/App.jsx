@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './assets/pages/Contact';
 import About from "./assets/pages/About"
 
+
 function App() {
   const [items, setItems] = useState([])
   const [cartItems, setCartItems] = useState([]);

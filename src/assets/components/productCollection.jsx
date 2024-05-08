@@ -1,6 +1,8 @@
 import React from 'react'
 import ProductCard from './productCard'
 
+
+
 const ProductCollection = ({ items, addToCart }) => {
   return (
     <div className='product-collection'>
@@ -12,6 +14,7 @@ const ProductCollection = ({ items, addToCart }) => {
         />
       ))}
     </div>
+
   );
 }
 
