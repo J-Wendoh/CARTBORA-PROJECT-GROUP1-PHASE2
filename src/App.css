@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px;
     background-color: grey;
+    border-radius: 10px;
 }
 
 .header-left h1 {
@@ -114,7 +115,4 @@
     margin-right: auto;
 }
   
-    width: 100%; 
-    object-fit: cover;
-}
 
