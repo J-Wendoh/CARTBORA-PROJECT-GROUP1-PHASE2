@@ -1,15 +1,21 @@
 import React,  {useState} from 'react'
 import ProductCard from './productCard'
 import FilterModule from './filterModule';
+import SearchBar from './searchBar';
 
 
 
 const ProductCollection = ({ items, addToCart }) => {
   const [selectedCategory, setSelectedCategory] = useState('All')
+  const [searchTerm, setSearchTerm] = useState('');
 
-  // function handleCategoryChange(category) {
-  //   setSelectedCategory(category);
-  // }
+  // const handleChange = (event) => {
+  //   setSearchTerm(event.target.value);
+  // };
+
+  const handleSearchChange = (term) => {
+    setSearchTerm(term);
+  };
 
   const filterItems = (catItem) => {
     setSelectedCategory(catItem);
@@ -25,19 +31,23 @@ const ProductCollection = ({ items, addToCart }) => {
     }
   };
 
-  const itemsToDisplay = items.filter((item) => {
-    if (selectedCategory === "All") return true;
-
-    return item.category === selectedCategory;
+  const filteredItems = items.filter((item) => {
+    // Combine category and search term filtering conditions
+    return (
+      (selectedCategory === "All" || item.category === selectedCategory) &&
+      item.productName.toLowerCase().includes(searchTerm.toLowerCase())
+    );
   });
+  
 
   return (
     <>
     <div>
+      <SearchBar onSearchChange={handleSearchChange}/>
       <FilterModule filterItems={filterItems}/>
     </div>
     <div className='product-collection'>
-      {itemsToDisplay.map((item) => (
+      {filteredItems.map((item) => (
         <ProductCard
           key={item.id}
           item={item}

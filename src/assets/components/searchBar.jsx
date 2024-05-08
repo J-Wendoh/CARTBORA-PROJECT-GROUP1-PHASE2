@@ -1,27 +1,21 @@
 import React, { useState } from 'react';
 
-function SearchBar({ onSearch }) {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    onSearch(searchTerm);
-  };
+function SearchBar({onSearchChange}) {
+ 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <div className="search-container"> {/* Optional class for overall styling */}
+    <label >Search Transactions:</label>
+    <div className="search-input">  {/* Add a class for styling the input field */}
+      {/* <FontAwesomeIcon icon={faSearch} className="search-icon" /> */}
       <input
         type="text"
-        placeholder="Search products..."
-        value={searchTerm}
-        onChange={handleChange}
+        id="search"
+        placeholder="Search by description"
+        onChange={(e) => onSearchChange(e.target.value)}
       />
-      <button type="submit">Search</button>
-    </form>
+    </div>
+  </div>
   );
 }
 
