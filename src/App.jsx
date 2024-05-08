@@ -24,7 +24,31 @@ function App() {
 
   // Function to add item to cart
   const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
+    const updatedItems = items.map((product) => {
+      if (product.id === item.id) {
+        // Decrease quantity in db.json
+        if (product.quantity > 0) {
+          product.quantity -= 1;
+        } else {
+          alert('Out of stock');
+          return product;
+        }}})
+
+    // Check if item already exists in cart
+    const existingItemIndex = cartItems.findIndex((cartItem) => cartItem.id === item.id);
+
+    if (existingItemIndex !== -1) {
+
+      // If item already exists, update its quantity
+      const updatedCartItems = [...cartItems];
+      updatedCartItems[existingItemIndex].item_quantity += 1;
+      setCartItems(updatedCartItems);
+    } else {
+      // If item doesn't exist, add it to cart with quantity 1
+      setCartItems([...cartItems, { ...item, item_quantity: 1 }]);
+
+    }
+
   };
 
   // Function to remove item from cart
