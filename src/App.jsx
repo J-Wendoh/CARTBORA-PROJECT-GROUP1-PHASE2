@@ -6,7 +6,7 @@ import Cart from './assets/components/cart';
 import Contact from './assets/pages/Contact';
 import About from './assets/pages/About';
 import SearchBar from './assets/components/searchBar';
-import './App.css'
+import './App.css';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -35,7 +35,7 @@ function App() {
   // Function to handle search
   const handleSearch = (searchTerm) => {
     const filtered = items.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase()) 
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredItems(filtered);
   };
@@ -52,7 +52,10 @@ function App() {
             path="/"
             element={<ProductCollection items={filteredItems} addToCart={addToCart} />}
           />
-          <Route path="/cart" element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />} />
+          <Route
+            path="/cart"
+            element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
+          />
         </Routes>
       </div>
     </Router>
