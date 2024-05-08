@@ -84,11 +84,18 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", en
     
 }
 
+.cart{
+    display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
 
 
 .cart-items {
     display: flex;
     flex-wrap: wrap;
+   
   }
 
 
@@ -96,7 +103,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", en
     background-color: #fff; 
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    width: 250px; 
+    width: 350px; 
     margin: 10px; 
     padding: 15px; 
 

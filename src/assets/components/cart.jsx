@@ -10,6 +10,7 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
   return (
     <div className="cart">
       <h2>Cart</h2>
+      <div className='product'>
       <div className="cart-items">
         {cartItems.map((item) => (
           <div key={item.id} className="cart-item">
@@ -24,6 +25,7 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
             </div>
           </div>
         ))}
+      </div>
       </div>
        <div className="total-price">
        <h4>Total Price: Ksh {totalPrice}</h4>
