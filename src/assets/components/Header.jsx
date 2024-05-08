@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Contact from "../pages/Contact"
 import AboutUs from '../pages/About';
 import { Link } from 'react-router-dom';
+import { ShoppingCartSimple, Storefront} from '@phosphor-icons/react';
 
 
 const Header = ({ cartItems }) => {
@@ -15,7 +16,10 @@ const Header = ({ cartItems }) => {
     return (
         <div className="header">
             <div className="header-left">
-                <h1><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" />CARTBORA</h1>
+                <h1>
+                <ShoppingCartSimple color='white' weight='duotone' size={40}/> CARTBORA
+                </h1>
+                {/* <h1><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" />CARTBORA</h1> */}
             </div>
             <div className="header-right">
                 <ul>
@@ -23,7 +27,7 @@ const Header = ({ cartItems }) => {
                     <Link to = '/contact'><li>CONTACT US</li></Link>
                     <Link to = '/about'><li>ABOUT</li></Link>
                     <Link to = '/cart'>
-                    <a href=""><li><img src="https://cdn-icons-png.flaticon.com/128/3144/3144456.png" alt="Cart Icon" />
+                    <a href=""><li><ShoppingCartSimple size={30} />
                     {cartCount > 0 && (
               <span className="cart-count">{cartCount}</span>
             )}</li></a>

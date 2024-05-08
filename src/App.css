@@ -3,25 +3,38 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: grey;
+    
+    background: hsla(159, 35%, 45%, 1);
+
+background: linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(159, 35%, 45%, 1) 0%, hsla(176, 68%, 12%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", endColorstr="#0A3431", GradientType=1 );
 }
 
 .header-left h1 {
     display: flex;
     align-items: center;
     font-size: 24px;
+    color: whitesmoke;
+    
 }
 
 .header-left img {
     width: 30px; 
     margin-left: 5px; 
     margin-right: 5px;
+    color: whitesmoke;
 }
 
 .header-right ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    color: whitesmoke;
 }
 .header-right img{
     width: 30px; 
@@ -32,7 +45,7 @@
     margin-right: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: large;
-    color: black;
+    color: whitesmoke
 }
 
 .header-right ul li:last-child {
@@ -41,6 +54,7 @@
 .header-right a{
     margin-right: 10px;
     margin-left: 10px;
+    color: whitesmoke;
 
 }
 .header-right ul li a {
