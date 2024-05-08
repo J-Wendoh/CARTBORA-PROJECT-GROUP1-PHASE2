@@ -16,7 +16,7 @@ function FilterModule({ filterItems, items }) {
   return (
     <div className="filter-buttons">
       {categoryButtons.map((button) => (
-        <button key={button.value} type="button" onClick={() => handleClick(button.value)}>
+        <button id="category" key={button.value} type="button" onClick={() => handleClick(button.value)}>
           {button.name}
         </button>
       ))}

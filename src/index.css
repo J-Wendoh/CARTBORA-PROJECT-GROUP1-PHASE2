@@ -29,6 +29,11 @@
     font-size: 18px; 
     margin-bottom: 5px; 
   }
+  .product-card:hover {
+    background-color: grey;
+    width: 260px; 
+  }
+  
   
   .product-card h3 {
     
@@ -100,5 +105,7 @@
   }
 
   /* app styling */
-
-  
+#category{
+  background-color: grey;
+  border-radius: 20px;
+}
