@@ -116,10 +116,10 @@ flex-wrap: wrap;
 /* contact and home page css */
 
 .container{
-    background-color: grey;
     justify-content: center;
     border-radius: 10px;
     text-align: center;
+    font-style: oblique;
 
 }
 #slogan {
@@ -127,12 +127,14 @@ flex-wrap: wrap;
     font-style: italic; 
   }
 
+
 #aimg{
-    width: 700px;
-    height: 700px;
+    width:500px;
+    height: 500px;
     display: block; 
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%;
 }
   
     width: 100%; 
