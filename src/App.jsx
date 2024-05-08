@@ -43,6 +43,7 @@ function App() {
   return (
     <Router>
       <div>
+      <h2 id="slogan">Shop Smart, Shop Bora ; just a click away with CARTBORA!</h2>
         <Header cartItems={cartItems} />
         <Routes>
           <Route path="/contact" element={<Contact />} />

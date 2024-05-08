@@ -1,6 +1,6 @@
 import React,  {useState} from 'react'
 import ProductCard from './productCard'
-import FilterModule from './filterModule'
+import FilterModule from './filterModule';
 
 
 
@@ -32,6 +32,7 @@ const ProductCollection = ({ items, addToCart }) => {
   });
 
   return (
+    <>
     <div>
       <FilterModule filterItems={filterItems}/>
     </div>
@@ -44,6 +45,7 @@ const ProductCollection = ({ items, addToCart }) => {
         />
       ))}
     </div>
+    </>
   )}
 
 export default ProductCollection
