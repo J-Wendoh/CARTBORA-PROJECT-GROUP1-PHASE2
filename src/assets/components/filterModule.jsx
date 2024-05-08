@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FilterModule({ filterItems, items }) {
+function FilterModule({ filterItems }) {
   const categoryButtons = [
     { name: 'All Products', value: 'All' },
     { name: 'Kitchen', value: 'kitchen' },
