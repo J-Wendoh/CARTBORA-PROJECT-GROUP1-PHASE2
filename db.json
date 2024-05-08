@@ -31,7 +31,7 @@
         "productId": 4,
         "productName": "Wireless Earphones",
         "price": 4900,
-        "productPicture": "https://www.sony.com/image/e3beeee2eeeb7580a61adcab32538851?fmt=pjpeg&wid=1014&hei=396&bgcolor=F1F5F9&bgc=F1F5F9",
+        "productPicture": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MY582?wid=1144&hei=1144&fmt=jpeg&qlt=95&.v=1604515400000",
         "description": "Compact and convenient wireless earphones for enjoying music and calls on the go.",
         "category": "electronics",
         "quantity": 22
@@ -89,6 +89,15 @@
         "description": "Warm and comfortable sweatshirt perfect for cooler weather.",
         "category": "clothing",
         "quantity": 42
+      },
+      {
+        "productId": 10,
+        "productName": "Apple iPhone 15 Pro Max",
+        "price": 150000,
+        "productPicture": "https://m.media-amazon.com/images/I/815eN0AS-CL._AC_UF1000,1000_QL80_DpWeblab_.jpg",
+        "description": "The iPhone 15 Pro Max packs a punch with its dazzling 6.7-inch display and powerhouse A17 Pro chip. Capture pro-quality photos and videos with the quad-lens camera system. All wrapped in a sleek, durable design and long-lasting battery, it's the future of smartphones in your hand.",
+        "category": "electronics",
+        "quantity": 5
       },
       {
         "productId": 11,
