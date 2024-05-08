@@ -20,7 +20,7 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
               <p>{item.category}</p>
               <p>{item.description}</p>
               <p>Item quantity : {item.item_quantity }</p>
-              <p>Price: <strong>Ksh {item.price}</strong></p>
+              <p>Price: <strong>Ksh {item.price} × {item.item_quantity} = {item.price * item.item_quantity}</strong> </p>
               <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
             </div>
           </div>
