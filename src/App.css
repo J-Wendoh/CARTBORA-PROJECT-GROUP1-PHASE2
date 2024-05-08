@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: grey;
 }
 
 .header-left h1 {
@@ -86,3 +86,26 @@
     height: 400px;
     width: 300px;
 }
+
+/* contact and home page css */
+
+.container{
+    background-color: grey;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+
+}
+#slogan {
+    text-align: center;
+    font-style: italic; 
+  }
+
+#aimg{
+    width: 700px;
+    height: 700px;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+}
+  
