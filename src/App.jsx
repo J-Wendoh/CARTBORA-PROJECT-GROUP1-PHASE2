@@ -7,12 +7,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Contact from './assets/pages/Contact';
 import About from "./assets/pages/About"
 import FilterModule from './assets/components/filterModule'
+import SearchBar from './assets/components/searchBar';
 
 
 function App() {
   const [items, setItems] = useState([])
   const [cartItems, setCartItems] = useState([]);
- 
+  
   
 
   useEffect(()=> {
@@ -30,17 +31,12 @@ function App() {
   const removeFromCart = (item) => {
     setCartItems(cartItems.filter((i) => i.id !== item.id));
   }
-
- 
-  
-  
   
   return (
     
      <Router>
       <div>
         <Header cartItems={cartItems} />
-       
        <Routes>
           <Route path="/contact" element={<Contact />} />    
           <Route path="/about" element={<About />} />
