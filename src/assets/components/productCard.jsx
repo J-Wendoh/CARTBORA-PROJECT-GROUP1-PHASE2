@@ -2,8 +2,13 @@ import React from 'react'
 
 const ProductCard = ({ item, addToCart}) => {
   const handleAddToCart = () => {
-    addToCart(item); 
-    alert("Added to Cart Succesfully")
+ 
+    if (item.quantity > 0) {
+      addToCart(item); 
+       alert("Added to Cart Succesfully")
+    } else{
+      alert("Out of stock")
+    }
   };
 
 
@@ -14,6 +19,7 @@ const ProductCard = ({ item, addToCart}) => {
         <h2>{item.productName}</h2>
         <h3>{item.category}</h3>
         <p>{item.description}</p>
+        
         <p>
           Price:<strong>Ksh {item.price}</strong>
         </p>
