@@ -32,7 +32,6 @@ const ProductCollection = ({ items, addToCart }) => {
   });
 
   return (
-    <>
     <div>
       <FilterModule filterItems={filterItems}/>
     </div>
@@ -45,7 +44,6 @@ const ProductCollection = ({ items, addToCart }) => {
         />
       ))}
     </div>
-    </>
   )}
 
 export default ProductCollection
