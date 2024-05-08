@@ -1,7 +1,12 @@
+
 import React, { useState } from 'react';
 import ProductCard from './productCard';
 import FilterModule from './filterModule';
 import SearchBar from './searchBar'; 
+import React,  {useState} from 'react'
+import ProductCard from './productCard'
+import FilterModule from './filterModule'
+
 
 const ProductCollection = ({ items, addToCart }) => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -39,5 +44,18 @@ const ProductCollection = ({ items, addToCart }) => {
     </>
   );
 };
+    <div>
+      <FilterModule filterItems={filterItems}/>
+    </div>
+    <div className='product-collection'>
+      {itemsToDisplay.map((item) => (
+        <ProductCard
+          key={item.id}
+          item={item}
+          addToCart={addToCart} 
+        />
+      ))}
+    </div>
+  )}
 
 export default ProductCollection;

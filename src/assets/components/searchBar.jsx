@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const SearchBar = ({ onSearch }) => {
+function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (event) => {
@@ -25,5 +26,14 @@ const SearchBar = ({ onSearch }) => {
     </form>
   );
 };
+        placeholder="Search products..."
+        value={searchTerm}
+        onChange={handleChange}
+      />
+      <button type="submit">Search</button>
+    </form>
+  );
+}
+
 
 export default SearchBar;
