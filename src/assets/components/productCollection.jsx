@@ -32,8 +32,10 @@ const ProductCollection = ({ items, addToCart }) => {
   });
 
   return (
+    <>
     <div>
       <FilterModule filterItems={filterItems}/>
+    </div>
     <div className='product-collection'>
       {itemsToDisplay.map((item) => (
         <ProductCard
@@ -43,12 +45,7 @@ const ProductCollection = ({ items, addToCart }) => {
         />
       ))}
     </div>
-<<<<<<< HEAD
-
-=======
-    </div>
->>>>>>> 536ebdc7a10b6800f05fe3f85ddb28b17af03db8
-  );
-}
+    </>
+  )}
 
 export default ProductCollection
