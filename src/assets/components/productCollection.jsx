@@ -1,6 +1,6 @@
 import React,  {useState} from 'react'
 import ProductCard from './productCard'
-import FilterModule from './FilterModule';
+import FilterModule from './filterModule'
 
 
 
