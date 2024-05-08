@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div  class="container">
       <h1>About Us</h1>
-      <img id="aimg" src="https://images.pexels.com/photos/6994275/pexels-photo-6994275.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Our Delivery Personel" />
+      <img id="aimg" src="https://images.pexels.com/photos/6214390/pexels-photo-6214390.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Online shopping photo" />
       <p>Welcome to Our Online Store!</p>
       <p>We are dedicated to providing high-quality products and excellent customer service to our valued customers. Our mission is to make your online shopping experience convenient, enjoyable, and secure.</p>
       <p>At Our Online Store, you can find a wide range of products including electronics, fashion, home goods, and more. We source our products from trusted suppliers to ensure that you receive only the best.</p>
@@ -13,21 +13,21 @@ const AboutUs = () => {
 
       <div>
       <h2>Location</h2>
-      <p>CARTBORA is located in the heart of Silicon Valley, California.</p>
+      <p>CARTBORA is located in the heart of Kenya,Nairobi County.</p>
       <p>Our address:</p>
       <address>
-        123 Main Street<br />
-        Silicon Valley, CA 94025<br />
-        United States
+        3124 -03000<br />
+        CBD, Kenyatta Road<br />
+        Nairobi
       </address>
 
       <h2>Headquarters</h2>
-      <p>Our headquarters is centrally located in the bustling city of San Francisco.</p>
+      <p>Our headquarters is centrally located in the bustling streets of Karen.</p>
       <p>Visit us at:</p>
       <address>
-        456 Central Avenue<br />
-        San Francisco, CA 94105<br />
-        United States
+        The Hub Karen<br />
+        Second floor,Stall 20<br />
+        Karen
       </address>
     </div>
     </div>

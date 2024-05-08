@@ -32,7 +32,7 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
        <h4>Tax Fee : Ksh {taxFee}</h4>
        <h4>Total Amount to be paid : Ksh {taxFee + totalPrice}</h4>
        </div>
-      <button onClick={proceedToCheckout}>Proceed to Checkout</button>
+      <button id="checkout" onClick={proceedToCheckout}>Proceed to Checkout</button>
     </div>
   );
 };
