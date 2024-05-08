@@ -1,15 +1,27 @@
-import React from 'react'
+import React from 'react';
 
-function FilterModule({filterItems, setItems, items}) {
+function FilterModule({ filterItems, items }) {
+  const categoryButtons = [
+    { name: 'All Products', value: 'All' },
+    { name: 'Kitchen', value: 'kitchen' },
+    { name: 'Clothing', value: 'clothing' },
+    { name: 'Food', value: 'food' },
+    { name: 'Electronics', value: 'electronics' },
+  ];
+
+  const handleClick = (value) => {
+    filterItems(value);
+  };
+
   return (
     <div className="filter-buttons">
-      <button type="button" onClick={() => setItems(items)}>All Products</button>
-      <button type="button" onClick={() => filterItems('kitchen')}>Kitchen</button>
-      <button type="button"onClick={() => filterItems('clothing')}>Clothing</button>
-      <button type="button"onClick={() => filterItems('food')}>Food</button>
-      <button type="button"onClick={() => filterItems('electronics')}>Electronics</button>
+      {categoryButtons.map((button) => (
+        <button key={button.value} type="button" onClick={() => handleClick(button.value)}>
+          {button.name}
+        </button>
+      ))}
     </div>
   );
 }
 
-export default FilterModule
+export default FilterModule;

@@ -11,6 +11,7 @@ import FilterModule from './assets/components/FilterModule'
 function App() {
   const [items, setItems] = useState([])
   const [cartItems, setCartItems] = useState([]);
+ 
   
 
   useEffect(()=> {
@@ -29,20 +30,16 @@ function App() {
     setCartItems(cartItems.filter((i) => i.id !== item.id));
   }
 
-  const filterItems = (catItem) => {
-    const updateItems = items.filter((curItem) => {
-      return curItem.category === catItem
-    })
-    setItems(updateItems)
-  }
+ 
+  
+  
   
   return (
     
      <Router>
       <div>
-        <h1>CART-BORA APP</h1>
         <Header cartItems={cartItems} />
-        <FilterModule filterItems={filterItems} setItems={setItems} items={items}/>
+       
        <Routes>
           <Route path="/contact" element={<Contact />} />    
           <Route path="/about" element={<About />} />
