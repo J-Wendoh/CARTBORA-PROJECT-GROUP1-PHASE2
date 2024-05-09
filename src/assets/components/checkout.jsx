@@ -3,7 +3,11 @@ import React from 'react';
 const Checkout = ({ cartItems }) => {
   // Calculate total price for each item and overall total price
   const totalItemsPrice = cartItems.map(item => item.price * item.item_quantity).reduce((acc, cur) => acc + cur, 0);
+  // Calculate tax
+  const taxFee = totalItemsPrice * 0.16;
 
+  //total plus the tax
+ const total = taxFee + totalItemsPrice
   return (
     <div className="checkout">
       <h2>Checkout</h2>
@@ -28,8 +32,12 @@ const Checkout = ({ cartItems }) => {
         </tbody>
         <tfoot>
           <tr>
+            <td colSpan="3">V.A.T:</td>
+            <td>Ksh {taxFee}</td>
+          </tr>
+          <tr>
             <td colSpan="3">Total:</td>
-            <td>Ksh {totalItemsPrice}</td>
+            <td>Ksh {total}</td>
           </tr>
         </tfoot>
       </table>
