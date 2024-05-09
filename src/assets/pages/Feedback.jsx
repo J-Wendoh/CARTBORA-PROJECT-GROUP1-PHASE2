@@ -50,7 +50,7 @@ const Feedback = () => {
 
   return (
     <div className="container">
-      <h2 className="heading">We'd Love to hear from you : Speak to us</h2>
+      <h2 className="heading">We would Love to hear from you : Speak to us</h2>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="userName">Your Name:</label>
