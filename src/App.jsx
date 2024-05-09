@@ -6,6 +6,7 @@ import Cart from './assets/components/cart';
 import Contact from './assets/pages/Contact';
 import About from './assets/pages/About';
 import SearchBar from './assets/components/searchBar';
+import Feedback from './assets/pages/Feedback'
 import './App.css';
 
 function App() {
@@ -70,6 +71,7 @@ function App() {
       <h2 id="slogan">Shop Smart, Shop Bora ; just a click away with CARTBORA!</h2>
         <Header cartItems={cartItems} />
         <Routes>
+        <Route path="/feedback" element={<Feedback />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route

@@ -116,30 +116,7 @@
       "userName": "John Doe",
       "content": "This product is amazing! I love it.",
       "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": 2,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": 3,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": 4,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
     }
-  ]
 
- 
+  ]
 }
-  
