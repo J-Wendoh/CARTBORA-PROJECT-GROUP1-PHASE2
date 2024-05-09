@@ -53,6 +53,7 @@ const ProductCollection = ({ items, addToCart }) => {
           item={item}
           addToCart={addToCart} 
         />
+        
       ))}
     </div>
     </>

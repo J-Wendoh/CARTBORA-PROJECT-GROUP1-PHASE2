@@ -2,13 +2,7 @@ import React from 'react'
 
 const ProductCard = ({ item, addToCart}) => {
   const handleAddToCart = () => {
- 
-    if (item.quantity > 0) {
-      addToCart(item); 
-       alert("Added to Cart Succesfully")
-    } else{
-      alert("Out of stock")
-    }
+      addToCart(item)  
   };
 
 
@@ -25,8 +19,8 @@ const ProductCard = ({ item, addToCart}) => {
         </p>
         <div className="product-button">
           <button onClick={handleAddToCart}>Add to Cart</button>
-        </div>
-      </div>
+          </div>
+    </div>
     </div>
   );
 };

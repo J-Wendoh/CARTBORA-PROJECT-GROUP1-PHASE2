@@ -1,11 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
+const Cart = ({ cartItems, removeFromCart, updateQuantity}) => {
     // Calculate total price
   const totalPrice = cartItems.reduce((total, item) => total + item.price*item.item_quantity , 0);
   
-  // Calculate tax fee (10%)
+  // Calculate tax fee (16%)
   const taxFee = totalPrice * 0.16;
+
+  // Function to handle increasing item quantity
+  const increaseQuantity = (item) => {
+    updateQuantity(item, item.item_quantity + 1);
+  };
+
+  // Function to handle decreasing item quantity
+  const decreaseQuantity = (item) => {
+    if (item.item_quantity > 1) {
+      updateQuantity(item, item.item_quantity - 1);
+    }
+  };
 
   return (
     <div className="cart">
@@ -19,7 +32,12 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
               <h3>{item.productName}</h3>
               <p>{item.category}</p>
               <p>{item.description}</p>
-              <p>Item quantity : {item.item_quantity }</p>
+               <p>
+                Item quantity :{' '}
+                <button className='update-button' onClick={() => decreaseQuantity(item)}>-</button>
+                {item.item_quantity}
+                <button className = 'update-button'onClick={() => increaseQuantity(item)}>+</button>
+              </p>
               <p>Price: <strong>Ksh {item.price} × {item.item_quantity} = {item.price * item.item_quantity}</strong> </p>
               <button onClick={() => removeFromCart(item)}>Remove from Cart</button>
             </div>
@@ -32,7 +50,7 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
        <h4>Tax Fee : Ksh {taxFee}</h4>
        <h4>Total Amount to be paid : Ksh {taxFee + totalPrice}</h4>
        </div>
-      <button id="checkout" onClick={proceedToCheckout}>Proceed to Checkout</button>
+      <Link to = "/checkout"><button id="checkout" >Proceed to Checkout</button> </Link>
     </div>
   );
 };
