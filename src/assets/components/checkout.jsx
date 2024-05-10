@@ -32,7 +32,7 @@ const Checkout = ({ cartItems }) => {
         </tbody>
         <tfoot>
           <tr>
-            <td colSpan="3">V.A.T:</td>
+            <td colSpan="3">Value Added Tax:</td>
             <td>Ksh {taxFee}</td>
           </tr>
           <tr>
