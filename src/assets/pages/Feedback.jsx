@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { UserCircle } from '@phosphor-icons/react';
 
 const Feedback = () => {
   const [comments, setComments] = useState([]);
@@ -49,7 +50,7 @@ const Feedback = () => {
   }, []);
 
   return (
-    <div className="container">
+    <div className="container-feedback">
       <h2 className="heading">We would Love to hear from you : Speak to us</h2>
       <form className="form" onSubmit={handleSubmit}>
         <div className="form-group">
@@ -80,7 +81,10 @@ const Feedback = () => {
         {comments.map((comment) => (
           <div key={comment.id} className="comment-card">
             <div className="comment-info">
+              <div className='profile'>
+              <UserCircle size={32}/>
               <span className="comment-name">{comment.userName}</span>
+              </div>
               <button
                 className="like-button"
                 onClick={() => handleLike(comment.id)}
