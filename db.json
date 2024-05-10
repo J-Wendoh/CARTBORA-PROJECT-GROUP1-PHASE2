@@ -118,58 +118,17 @@
       "createdAt": "2024-05-09T17:18:00.000Z"
     },
     {
-      "id": 2,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": 3,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": 4,
-      "userId": 123,
-      "userName": "John Doe",
-      "content": "This product is amazing! I love it.",
-      "createdAt": "2024-05-09T17:18:00.000Z"
-    },
-    {
-      "id": "8942",
-      "name": "Joanne",
-      "comment": "I love it"
-    },
-    {
-      "id": "781c",
-      "name": "Austin ",
-      "comment": "Why"
-    },
-    {
-      "id": "fe3d",
-      "name": "Shukry",
-      "comment": "gUKHDCHSDV"
-    },
-    {
-      "id": "8130",
-      "userId": 123,
-      "userName": "Joanne",
-      "content": "I loved it"
-    },
-    {
-      "id": "695f",
+
+      "id": "b901",
       "userId": 123,
       "userName": "Arnold",
-      "content": "Nice Work\n"
+      "content": "Love the app"
     },
     {
-      "id": "5388",
+      "id": "ad57",
       "userId": 123,
-      "userName": "Alvin",
-      "content": "I like the website setup.\n"
+      "userName": "Moses",
+      "content": "Fast Deliveries! love it!"
     }
   ]
 }

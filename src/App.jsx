@@ -8,6 +8,7 @@ import About from './assets/pages/About';
 import SearchBar from './assets/components/searchBar';
 import Feedback from './assets/pages/Feedback'
 import './App.css';
+import Checkout from './assets/components/checkout';
 
 function App() {
   const [items, setItems] = useState([]);
@@ -39,17 +40,34 @@ function App() {
     const existingItemIndex = cartItems.findIndex((cartItem) => cartItem.id === item.id);
 
     if (existingItemIndex !== -1) {
-
-      // If item already exists, update its quantity
+      
+  // If item already exists, show alert 
       const updatedCartItems = [...cartItems];
-      updatedCartItems[existingItemIndex].item_quantity += 1;
+      alert('Item already added to cart!')
       setCartItems(updatedCartItems);
     } else {
+      if (item.quantity > 0 ) { 
+        alert("Added to Cart Succesfully")
+      } else{
+        alert("Out of stock")
+      }
       // If item doesn't exist, add it to cart with quantity 1
       setCartItems([...cartItems, { ...item, item_quantity: 1 }]);
 
+
     }
 
+  };
+
+  // Function to update item quantity in cart
+  const updateQuantity = (item, item_quantity) => {
+    const updatedCartItems = cartItems.map((cartItem) => {
+      if (cartItem.id === item.id) {
+        return { ...cartItem, item_quantity: item_quantity };
+      }
+      return cartItem;
+    });
+    setCartItems(updatedCartItems);
   };
 
   // Function to remove item from cart
@@ -80,8 +98,13 @@ function App() {
           />
           <Route
             path="/cart"
-            element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
+            element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} updateQuantity = {updateQuantity}/>}
           />
+          <Route
+            path="/checkout"
+            element={<Checkout cartItems={cartItems} />}
+          />
+          
         </Routes>
       </div>
     </Router>
