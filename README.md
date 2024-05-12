@@ -1,4 +1,4 @@
-<<<<<<<<<<HEAD
+
 # CART-BORA APP
 
 This is an app that allows the user to shop household items ,electronics ,food and clothing from the comfort of their home.
