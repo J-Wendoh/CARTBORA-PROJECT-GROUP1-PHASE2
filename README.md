@@ -3,6 +3,11 @@
 
 This is an app that allows the user to shop household items ,electronics ,food and clothing from the comfort of their home.
 
+#LINKS REQUIRED
+
+App was deployed and this is the live link:    https://cartbora.netlify.app/
+The backend repo is this the link:        https://github.com/kisurizzz/eCommerce
+
 ## Description
 
 The app has a Cart function that is personalised for each user everytime the user visits the page but it is not saved.The user can:
